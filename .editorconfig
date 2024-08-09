@@ -1,0 +1,6 @@
+# Arquivo para configurar a indentação do código, definindo a raiz como true, o estilo de indentação como espaço ao invés de tab e o tamanho.
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
