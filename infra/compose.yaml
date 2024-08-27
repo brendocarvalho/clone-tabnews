@@ -1,0 +1,14 @@
+# Aqui definiremos os serviços e de onde eles vem, que será de uma imagem docker
+# Uma imagem é gerada depois de configurarmos um Dockerfile -> Arquivo onde se define os comandos do ambiente virtual com os serviços
+# Container -> É uma imagem que está sendo executada, então nossa aplicação se conectará ao container, em um exemplo de um container armazenando um banco de dados.
+# As imagens podem ser armazenadas no dockerhub
+# No caso dessa aplicação precisaremos usar a imagem do postgre armazenada no dockerhub
+
+services:
+  database:
+    image: "postgres:16.0-alpine3.18"
+    # Variaveis de ambiente que serão passadas para o banco
+    environment:
+      POSTGRES_PASSWORD: "local_password"
+    ports:
+      - "5432:5432"
