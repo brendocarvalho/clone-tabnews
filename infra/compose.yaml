@@ -8,7 +8,9 @@ services:
   database:
     image: "postgres:16.0-alpine3.18"
     # Variaveis de ambiente que serão passadas para o banco
-    environment:
-      POSTGRES_PASSWORD: "local_password"
+    # environment:
+    #   POSTGRES_PASSWORD: "local_password"
+    # Ao invés de passar variáveis de ambiente aqui no compose, vamos utilizar o arquivo de variáveis de ambiente para que o compose leia-o
+    env_file: ../.env
     ports:
       - "5432:5432"
