@@ -1,7 +1,7 @@
 //Criando uma rota pública: Basta criar um arquivo dentro da pasta /pages/api
 // Quando a api /status for consultada é bom fazer um teste de conexão com o banco de dados, para isso importamos o database.js para a rota da api
 
-import database from "../../../../infra/database.js";
+import database from "infra/database.js";
 
 export default async function status(request, response) {
   //Testando uma query

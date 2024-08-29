@@ -1,0 +1,7 @@
+//Configurando um caminho absoluto para as importações ficarem neste exemplo: "infra/database.js" sem precisar passar caminhos relativos "../"
+
+{
+  "compilerOptions": {
+    "baseUrl": "."
+  }
+}
